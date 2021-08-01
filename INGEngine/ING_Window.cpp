@@ -23,11 +23,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 
 	if (msg == WM_CREATE) {
 		window = (Window*)((LPCREATESTRUCT)lparam)->lpCreateParams;
-		SetWindowLongPtr(hwnd, GWL_USERDATA, (LONG_PTR)window);
+		SetWindowLongPtr(hwnd, GWLP_USERDATA, (LONG_PTR)window);
 		window->OnCreate();
 	}
 	else {
-		window = (Window*)GetWindowLong(hwnd, GWL_USERDATA);
+		window = (Window*)GetWindowLong(hwnd, GWLP_USERDATA);
 
 	}
 

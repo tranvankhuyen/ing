@@ -1,0 +1,38 @@
+﻿  pch.cpp
+  DeviceContext.cpp
+  EntitiesSystem.cpp
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(21,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(32,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(43,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(54,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(65,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(76,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(87,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(98,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(109,24): warning C4018: '<': signed/unsigned mismatch
+D:\Test\DX\ing\INGEngine\EntitiesSystem.cpp(160,25): warning C4018: '<': signed/unsigned mismatch
+  Entity.cpp
+  EntityComponent.cpp
+  EntityGroup.cpp
+  Graphics.cpp
+  INGEngine.cpp
+  ING_Math.cpp
+  Material.cpp
+  MaterialManager.cpp
+  Mesh.cpp
+  MeshResources.cpp
+  Physics.cpp
+  Renderer.cpp
+  RenderState.cpp
+  RenderSystem.cpp
+  Resources.cpp
+  Shader.cpp
+  ShaderCompiler.cpp
+  SwapChain.cpp
+  Generating Code...
+  Compiling...
+  ING_Time.cpp
+  TransformComponent.cpp
+  ING_Window.cpp
+  Generating Code...
+  INGEngine.vcxproj -> D:\Test\DX\ing\Win32\Debug\INGEngine.lib
