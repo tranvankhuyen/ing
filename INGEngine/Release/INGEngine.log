@@ -1,0 +1,6 @@
+﻿  DeviceContext.cpp
+  MeshResources.cpp
+  Physics.cpp
+  RenderState.cpp
+d3dcompiler.lib(D3DCOMPILER_47.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in d3d11.lib(d3d11.dll); second definition ignored
+  INGEngine.vcxproj -> D:\InfiniteEngine\Assets\ING\Release\INGEngine\INGEngine.lib

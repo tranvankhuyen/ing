@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="INGEngine">
+      <UniqueIdentifier>{ae6ec571-37c4-4b3b-90a8-f01a4eaaa052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics">
+      <UniqueIdentifier>{f5fcf74e-36db-4e48-b43a-fa5b93b58e28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Windows">
+      <UniqueIdentifier>{f03287dd-31de-40c7-85f4-42a4b3bf1bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Time">
+      <UniqueIdentifier>{6bd62383-8054-4286-a458-fc931ad17625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Physics">
+      <UniqueIdentifier>{b5e9620d-e761-46e2-aca0-a3499f8c58cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Resources">
+      <UniqueIdentifier>{990173da-670b-487e-9c82-c2671a6fc931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\EntitiesSystem">
+      <UniqueIdentifier>{a562b03f-8804-433e-925b-18c89b1f8a4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\DeviceContext">
+      <UniqueIdentifier>{3026c5e2-246b-4abe-9058-65130b909e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\SwapChain">
+      <UniqueIdentifier>{70f213ad-8d04-469b-9214-75f8dc15100b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\EntitiesSystem\EntityComponents">
+      <UniqueIdentifier>{c8891f9e-a118-43bd-bf48-f5bfcba6ea0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\EntitiesSystem\EntityComponent">
+      <UniqueIdentifier>{8b75312b-d036-4eac-a632-70b4f75381e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\EntitiesSystem\Entity">
+      <UniqueIdentifier>{5ff2548f-7fcd-4ed4-bc2e-b88114082fe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderSystem">
+      <UniqueIdentifier>{388047fb-202d-4600-8ef8-ba71c9fc0c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderSystem\Renderer">
+      <UniqueIdentifier>{70aabf0a-9546-48aa-94fe-c3ea1f74c6bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Math">
+      <UniqueIdentifier>{5df9b8f9-d2ad-4721-8e13-436caf2357fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Math\Vector">
+      <UniqueIdentifier>{4e6b1dec-7ecb-4f79-b24d-c3db616ff581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\EntitiesSystem\EntityGroup">
+      <UniqueIdentifier>{5e9180c8-2575-405a-8880-806e4f7337d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderSystem\RenderLayer">
+      <UniqueIdentifier>{84835187-7607-43ef-bca0-9959612776b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\ShaderCompiler">
+      <UniqueIdentifier>{7b9d9012-0f31-4ab5-9ae3-ebec8563e269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\MaterialAndShading">
+      <UniqueIdentifier>{2542ec48-857b-456c-8f78-9474029c29c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\MaterialAndShading\Material">
+      <UniqueIdentifier>{48be886f-2a1a-4188-ba7a-f4e9a9696589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\MaterialAndShading\Shading">
+      <UniqueIdentifier>{f46b92b0-d142-4b58-8093-6f343ec98dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderStates">
+      <UniqueIdentifier>{b37d6caf-6cfc-4718-a907-06c8f507526b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\Mesh">
+      <UniqueIdentifier>{5eb99262-865a-4900-a10a-4bc5b6529eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\Vertex">
+      <UniqueIdentifier>{003bbfd8-1a67-4a22-a99e-4d26afbe918b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Resources\Graphics">
+      <UniqueIdentifier>{c912c5e7-5f92-4943-82b6-2d17fa4336aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderSystem\RenderMiddleware">
+      <UniqueIdentifier>{5f7b5b27-7889-4102-9373-963a0eb5f2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderStates\RasterizerState">
+      <UniqueIdentifier>{bcbf3681-f435-40ea-be21-a25ec86a0d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderStates\DepthStencilState">
+      <UniqueIdentifier>{1e5f8d41-5d9a-427e-9a25-581bdca5229c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderStates\BlendState">
+      <UniqueIdentifier>{6a4c0eb1-f184-4d40-8054-515d72e26c49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INGEngine.h">
+      <Filter>INGEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>INGEngine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="EntitiesSystem.h">
+      <Filter>INGEngine\EntitiesSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityComponent.h">
+      <Filter>INGEngine\EntitiesSystem\EntityComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformComponent.h">
+      <Filter>INGEngine\EntitiesSystem\EntityComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="INGEntityComponents.h">
+      <Filter>INGEngine\EntitiesSystem\EntityComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>INGEngine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="ING_Time.h">
+      <Filter>INGEngine\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>INGEngine\EntitiesSystem\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceContext.h">
+      <Filter>INGEngine\Graphics\DeviceContext</Filter>
+    </ClInclude>
+    <ClInclude Include="SwapChain.h">
+      <Filter>INGEngine\Graphics\SwapChain</Filter>
+    </ClInclude>
+    <ClInclude Include="ING_Window.h">
+      <Filter>INGEngine\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="ING_Math.h">
+      <Filter>INGEngine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityGroup.h">
+      <Filter>INGEngine\EntitiesSystem\EntityGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSystem.h">
+      <Filter>INGEngine\Graphics\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderCompiler.h">
+      <Filter>INGEngine\Graphics\ShaderCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>INGEngine\Graphics\MaterialAndShading\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>INGEngine\Graphics\MaterialAndShading\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>INGEngine\Graphics\MaterialAndShading\Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.h">
+      <Filter>INGEngine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>INGEngine\Graphics\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>INGEngine\Graphics\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>INGEngine\Graphics\RenderSystem\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderState.h">
+      <Filter>INGEngine\Graphics\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="RasterizerState.h">
+      <Filter>INGEngine\Graphics\RenderStates\RasterizerState</Filter>
+    </ClInclude>
+    <ClInclude Include="BlendState.h">
+      <Filter>INGEngine\Graphics\RenderStates\BlendState</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthStencilState.h">
+      <Filter>INGEngine\Graphics\RenderStates\DepthStencilState</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="INGEngine.cpp">
+      <Filter>INGEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>INGEngine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="EntitiesSystem.cpp">
+      <Filter>INGEngine\EntitiesSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityComponent.cpp">
+      <Filter>INGEngine\EntitiesSystem\EntityComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformComponent.cpp">
+      <Filter>INGEngine\EntitiesSystem\EntityComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>INGEngine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="ING_Time.cpp">
+      <Filter>INGEngine\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>INGEngine\EntitiesSystem\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceContext.cpp">
+      <Filter>INGEngine\Graphics\DeviceContext</Filter>
+    </ClCompile>
+    <ClCompile Include="SwapChain.cpp">
+      <Filter>INGEngine\Graphics\SwapChain</Filter>
+    </ClCompile>
+    <ClCompile Include="ING_Window.cpp">
+      <Filter>INGEngine\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ING_Math.cpp">
+      <Filter>INGEngine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityGroup.cpp">
+      <Filter>INGEngine\EntitiesSystem\EntityGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSystem.cpp">
+      <Filter>INGEngine\Graphics\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCompiler.cpp">
+      <Filter>INGEngine\Graphics\ShaderCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>INGEngine\Graphics\MaterialAndShading\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>INGEngine\Graphics\MaterialAndShading\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>INGEngine\Graphics\MaterialAndShading\Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources.cpp">
+      <Filter>INGEngine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>INGEngine\Graphics\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshResources.cpp">
+      <Filter>INGEngine\Resources\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>INGEngine\Graphics\RenderSystem\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderState.cpp">
+      <Filter>INGEngine\Graphics\RenderStates</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
