@@ -3,6 +3,7 @@
 
 #include "Graphics.h"
 #include "Renderer.h"
+#include "RenderLayer.h"
 
 namespace ING {
 	namespace Engine {
@@ -10,6 +11,8 @@ namespace ING {
 		class Graphics;
 
 		class Renderer;
+
+		class RenderLayer;
 
 		class RenderSystem {
 		public:
@@ -20,7 +23,11 @@ namespace ING {
 			Graphics* graphics;
 
 		public:
+			void Render();
+
+		public:
 			Renderer* CreateRenderer();
+			RenderLayer* CreateRenderLayer();
 
 		};
 

@@ -103,7 +103,6 @@ bool Graphics::Init() {
 
 Shader* Graphics::CreateShader() {
 	Shader* result = new Shader();
-
 	return result;
 }
 
@@ -161,4 +160,10 @@ RenderState* Graphics::CreateRenderState() {
 	RenderState* state = new RenderState();
 	state->graphics = this;
 	return state;
+}
+
+
+void Graphics::CreateInputLayout(Shader* shader) {
+
+	d3dDevice->CreateInputLayout(shader->inputLayoutDesc.layout , shader->inputLayoutDesc.elementsCount, shader->pvsblob->GetBufferPointer(), shader->pvsblob->GetBufferSize(), &shader->inputLayout);
 }

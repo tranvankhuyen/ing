@@ -5,16 +5,12 @@
 #include "Vertex.h"
 #include <d3d11.h>
 #include <vector>
+#include "GBuffer.h"
 
 namespace ING {
 	namespace Engine {
 
 		class Graphics;
-
-		struct MeshBuffer {
-			ID3D11Buffer* vertexBuffer;
-			ID3D11Buffer* indicesBuffer;
-		};
 
 		struct MeshData {
 			std::vector<Vertex> vertices;
@@ -27,14 +23,14 @@ namespace ING {
 			~Mesh();
 
 		public:
-			MeshBuffer* buffer;
+			GBuffer* gbuffer;
 			MeshData* data;
 
 		public:
 			Graphics* graphics;
 
 		public:
-			void BuildBuffer();
+			void BuildGBuffer();
 		};
 
 	}

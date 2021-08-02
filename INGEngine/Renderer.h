@@ -32,6 +32,31 @@ namespace ING {
 
 		};
 
+
+
+		struct RendererNode {
+			Renderer* value;
+			RendererNode* next;
+			RendererNode* prev;
+		};
+
+		struct RendererList {
+			RendererNode* head;
+			RendererNode* tail;
+
+			void Add(RendererNode* rendererNode) {
+				if (head == nullptr) {
+					head = rendererNode;
+					tail = rendererNode;
+				}
+				else{
+					tail->next = rendererNode;
+					tail = rendererNode;
+				}
+			}
+
+		};
+
 	}
 }
 

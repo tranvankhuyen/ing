@@ -3,8 +3,13 @@
 
 using namespace ING::Engine;
 
+
+static Window* window;
+
+
 Window::Window(ING::Engine::INGEngine* INGEngine) {
 	this->INGEngine = INGEngine;
+	window = this;
 }
 
 
@@ -16,21 +21,8 @@ Window::~Window() {
 
 
 
-
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 {
-	Window* window;
-
-	if (msg == WM_CREATE) {
-		window = (Window*)((LPCREATESTRUCT)lparam)->lpCreateParams;
-		SetWindowLongPtr(hwnd, GWLP_USERDATA, (LONG_PTR)window);
-		window->OnCreate();
-	}
-	else {
-		window = (Window*)GetWindowLong(hwnd, GWLP_USERDATA);
-
-	}
-
 
 	switch (msg)
 	{

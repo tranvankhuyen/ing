@@ -12,6 +12,7 @@
 #include "Shader.h"
 #include "Vertex.h"
 #include "RenderState.h"
+#include "InputLayoutDesc.h"
 
 #include <iostream>
 
@@ -82,6 +83,7 @@ namespace ING {
 		public:
 			Shader* CreateShader();
 			Shader* CreateShaderFromFile(LPCWSTR srcPath);
+			void CreateInputLayout(Shader* shader);
 
 		public:
 			Mesh* CreateMesh();

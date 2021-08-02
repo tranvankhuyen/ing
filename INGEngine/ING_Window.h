@@ -19,6 +19,8 @@ namespace ING {
 			Window(INGEngine* INGEngine);
 			~Window();
 
+		
+
 		public:
 			INGEngine* INGEngine;
 

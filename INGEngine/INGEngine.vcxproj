@@ -165,10 +165,12 @@
     <ClInclude Include="EntityComponent.h" />
     <ClInclude Include="EntityGroup.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="GBuffer.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="INGEngine.h" />
     <ClInclude Include="INGEntityComponents.h" />
     <ClInclude Include="ING_Math.h" />
+    <ClInclude Include="InputLayoutDesc.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialManager.h" />
     <ClInclude Include="Mesh.h" />
@@ -176,6 +178,7 @@
     <ClInclude Include="Physics.h" />
     <ClInclude Include="RasterizerState.h" />
     <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RenderLayer.h" />
     <ClInclude Include="RenderState.h" />
     <ClInclude Include="RenderSystem.h" />
     <ClInclude Include="Resources.h" />
@@ -208,6 +211,7 @@
     </ClCompile>
     <ClCompile Include="Physics.cpp" />
     <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RenderLayer.cpp" />
     <ClCompile Include="RenderState.cpp" />
     <ClCompile Include="RenderSystem.cpp" />
     <ClCompile Include="Resources.cpp" />
@@ -217,6 +221,7 @@
     <ClCompile Include="ING_Time.cpp" />
     <ClCompile Include="TransformComponent.cpp" />
     <ClCompile Include="ING_Window.cpp" />
+    <ClCompile Include="Vertex.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

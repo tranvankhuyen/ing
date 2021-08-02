@@ -64,9 +64,6 @@
     <Filter Include="INGEngine\EntitiesSystem\EntityGroup">
       <UniqueIdentifier>{5e9180c8-2575-405a-8880-806e4f7337d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="INGEngine\Graphics\RenderSystem\RenderLayer">
-      <UniqueIdentifier>{84835187-7607-43ef-bca0-9959612776b6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="INGEngine\Graphics\ShaderCompiler">
       <UniqueIdentifier>{7b9d9012-0f31-4ab5-9ae3-ebec8563e269}</UniqueIdentifier>
     </Filter>
@@ -91,9 +88,6 @@
     <Filter Include="INGEngine\Resources\Graphics">
       <UniqueIdentifier>{c912c5e7-5f92-4943-82b6-2d17fa4336aa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="INGEngine\Graphics\RenderSystem\RenderMiddleware">
-      <UniqueIdentifier>{5f7b5b27-7889-4102-9373-963a0eb5f2dc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="INGEngine\Graphics\RenderStates\RasterizerState">
       <UniqueIdentifier>{bcbf3681-f435-40ea-be21-a25ec86a0d5f}</UniqueIdentifier>
     </Filter>
@@ -102,6 +96,18 @@
     </Filter>
     <Filter Include="INGEngine\Graphics\RenderStates\BlendState">
       <UniqueIdentifier>{6a4c0eb1-f184-4d40-8054-515d72e26c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderSystem\RenderLayer">
+      <UniqueIdentifier>{84835187-7607-43ef-bca0-9959612776b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\InputLayoutDesc">
+      <UniqueIdentifier>{8d93dab2-2abb-4d81-88ae-4497c5899003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\Buffers">
+      <UniqueIdentifier>{99fe75f0-d9fd-45a6-9730-80a01a0bc240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\Buffers\GBuffer">
+      <UniqueIdentifier>{c2428c2c-9c94-44f2-9294-13eba26c6d06}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +198,15 @@
     <ClInclude Include="DepthStencilState.h">
       <Filter>INGEngine\Graphics\RenderStates\DepthStencilState</Filter>
     </ClInclude>
+    <ClInclude Include="RenderLayer.h">
+      <Filter>INGEngine\Graphics\RenderSystem\RenderLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayoutDesc.h">
+      <Filter>INGEngine\Graphics\InputLayoutDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="GBuffer.h">
+      <Filter>INGEngine\Graphics\Buffers\GBuffer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -265,6 +280,12 @@
     </ClCompile>
     <ClCompile Include="RenderState.cpp">
       <Filter>INGEngine\Graphics\RenderStates</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderLayer.cpp">
+      <Filter>INGEngine\Graphics\RenderSystem\RenderLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>INGEngine\Graphics\Vertex</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

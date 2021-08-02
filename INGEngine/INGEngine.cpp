@@ -151,13 +151,9 @@ void INGEngine::DefaultPreRender() {
 
 void INGEngine::DefaultRender() {
 
-	float color[4] = {0,0,0,1};
-
-	graphics->deviceContext->ClearRenderTargetView(color);
-
 	entitiesSystem->OnRender();
 
-	graphics->swapChain->Present();
+	graphics->renderSystem->Render();
 
 }
 

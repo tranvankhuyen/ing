@@ -30,5 +30,26 @@ void DeviceContext::ClearRenderTargetView(ID3D11RenderTargetView* renderTargetVi
 
 
 void DeviceContext::SetShader(Shader* shader) {
+	if (!shader->isCurrentShader) {
+		if (currentShader != nullptr) {
+			currentShader->isCurrentShader = false;
+		}
+		shader->isCurrentShader = true;
+
+		if(shader->pixelShader!=nullptr)
+			d3dDeviceContext->PSSetShader(shader->pixelShader,nullptr,0);
+
+		if (shader->vertexShader != nullptr)
+			d3dDeviceContext->VSSetShader(shader->vertexShader, nullptr, 0);
+
+	
+		d3dDeviceContext->IASetInputLayout(shader->inputLayout);
+	}
+}
+
+
+
+
+void DeviceContext::SetGBuffer(GBuffer* gbuffer) {
 
 }

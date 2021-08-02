@@ -16,27 +16,46 @@ public:
 
 	}
 	virtual void OnStart() override;
+	virtual void OnRender() override;
 };
+
+Mesh* mesh;
+
+Shader* shader;
+
+Material* material;
+
+RenderState* renderState;
+
+RasterizerState* rasterizerState;
+DepthStencilState* depthStencilState;
+BlendState* blendState;
+
+Renderer* renderer;
 
 void INGApp::OnStart() {
 
-	Mesh* mesh = resources->ImportMesh_DemoFile("skull.txt");
+	mesh = resources->ImportMesh_DemoFile("skull.txt");
 
-	Shader* shader = graphics->CreateShaderFromFile(L"demo.fx");
+	shader = graphics->CreateShaderFromFile(L"demo.fx");
 
-	Material* material = graphics->materialManager->CreateMaterial(shader);
+	shader->inputLayoutDesc = Vertex::inputLayoutDesc;
 
-	RenderState* renderState = graphics->CreateRenderState();
+	graphics->CreateInputLayout(shader);
 
-	RasterizerState* rasterizerState = new RasterizerState();
-	DepthStencilState* depthStencilState = new DepthStencilState();
-	BlendState* blendState = new BlendState();
+	material = graphics->materialManager->CreateMaterial(shader);
+
+	renderState = graphics->CreateRenderState();
+
+	rasterizerState = new RasterizerState();
+	depthStencilState = new DepthStencilState();
+	blendState = new BlendState();
 
 	renderState->Set(rasterizerState,depthStencilState,blendState);
 	
-	Renderer* renderer = graphics->renderSystem->CreateRenderer();
+	renderer = graphics->renderSystem->CreateRenderer();
 
-	renderer->mesh = mesh;
+	renderer->mesh;
 
 	renderer->material = material;
 
@@ -45,6 +64,14 @@ void INGApp::OnStart() {
 	DefaultStart();
 }
 
+void INGApp::OnRender() {
+
+	float clearColor[4] = { 0,0,0,0 };
+
+
+
+	DefaultRender();
+}
 
 #pragma endregion INGAppClass
 

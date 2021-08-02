@@ -10,6 +10,7 @@
 #include "Resources.h"
 
 
+
 namespace ING {
 	namespace Engine {
 
@@ -27,6 +28,7 @@ namespace ING {
 
 		class Resources;
 
+
 		class INGEngine {
 
 		public:
@@ -36,6 +38,7 @@ namespace ING {
 		public:
 			Graphics* graphics;
 			Window* window;
+
 			EntitiesSystem* entitiesSystem;
 			Physics* physics;
 			Time* time;

@@ -53,6 +53,6 @@ MeshData* Resources::ImportMeshData_DemoFile(std::string path) {
 Mesh* Resources::ImportMesh_DemoFile(std::string path) {
 	Mesh* mesh = INGEngine->graphics->CreateMesh();
 	mesh->data = ImportMeshData_DemoFile(path);
-	mesh->BuildBuffer();
+	mesh->BuildGBuffer();
 	return mesh;
 }

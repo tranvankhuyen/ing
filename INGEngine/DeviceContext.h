@@ -3,6 +3,7 @@
 
 #include "INGEngine.h"
 #include <d3d11.h>
+#include "GBuffer.h"
 
 
 namespace ING {
@@ -32,7 +33,11 @@ namespace ING {
 			void ClearRenderTargetView(ID3D11RenderTargetView* renderTargetView, float color[4]);
 
 		public:
+			Shader* currentShader;
+
+		public:
 			void SetShader(Shader* shader);
+			void SetGBuffer(GBuffer* gbuffer);
 
 		};
 

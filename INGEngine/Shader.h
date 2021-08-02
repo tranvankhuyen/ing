@@ -1,7 +1,8 @@
 #ifndef SHADER_H
 #define SHADER_H
 
-#include "INGEngine.h"
+#include <d3d11.h>
+#include "InputLayoutDesc.h"
 
 namespace ING {
 	namespace Engine {
@@ -23,7 +24,12 @@ namespace ING {
 			ID3D11VertexShader* vertexShader;
 			ID3D11PixelShader* pixelShader;
 
-			ID3D11InputLayout* pInputLayout;
+		public:
+			ID3D11InputLayout* inputLayout;
+			InputLayoutDesc inputLayoutDesc;
+
+		public:
+			bool isCurrentShader;
 
 		};
 
