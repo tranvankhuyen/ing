@@ -56,11 +56,11 @@ void INGApp::OnStart() {
 	
 	renderer = graphics->renderSystem->CreateRenderer();
 
-	renderer->mesh = mesh;
+	renderer->SetMesh(mesh);
 
-	renderer->material = material;
+	renderer->SetMaterial(material);
 
-	renderer->renderState = renderState;
+	renderer->SetRenderState(renderState);
 
 	DefaultStart();
 }

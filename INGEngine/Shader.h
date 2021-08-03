@@ -9,6 +9,7 @@ namespace ING {
 
 		class Graphics;
 
+
 		class Shader {
 		public:
 			Shader();
@@ -26,6 +27,7 @@ namespace ING {
 
 			ID3D11InputLayout* inputLayout;
 			InputLayoutDesc inputLayoutDesc;
+
 
 		public:
 			void CreateInputLayout();

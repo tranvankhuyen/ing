@@ -5,25 +5,24 @@
   Graphics.cpp
   INGEngine.cpp
   ING_Math.cpp
+  ING_Time.cpp
+  ING_Window.cpp
   Material.cpp
   MaterialManager.cpp
   Mesh.cpp
   MeshResources.cpp
   Physics.cpp
-  Renderer.cpp
   RenderGroup.cpp
   RenderLayer.cpp
   RenderState.cpp
   RenderSystem.cpp
+  Renderer.cpp
   Resources.cpp
-  Shader.cpp
-  ShaderCompiler.cpp
   Generating Code...
   Compiling...
+  Shader.cpp
+  ShaderCompiler.cpp
   SwapChain.cpp
-  ING_Time.cpp
-  ING_Window.cpp
-D:\INGGameEngine\ing\INGEngine\ING_Window.cpp(30,55): warning C4312: 'type cast': conversion from 'LONG' to 'ING::Engine::Window *' of greater size
   Vertex.cpp
   Generating Code...
   INGEngine.vcxproj -> D:\INGGameEngine\ing\x64\Debug\INGEngine.lib

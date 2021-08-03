@@ -9,6 +9,8 @@ namespace ING {
 
 		class RenderLayer;
 
+		class Renderer;
+
 		class RenderGroup {
 		public:
 			RenderGroup();
@@ -16,6 +18,19 @@ namespace ING {
 
 		public:
 			RenderLayer* layer;
+
+		public:
+			RenderGroup* next;
+			RenderGroup* prev;
+		
+		private:
+			Renderer* headRenderer;
+			Renderer* tailRenderer;
+
+
+		public:
+			void Add(Renderer* renderer);
+			void Remove(Renderer* renderer);
 		};
 
 	}

@@ -17,6 +17,8 @@ namespace ING {
 
 		class RenderState;
 
+		class RenderGroup;
+
 		class Renderer {
 		public:
 			Renderer();
@@ -25,10 +27,25 @@ namespace ING {
 		public:
 			RenderSystem* system;
 
-		public:
+		private:
 			Material* material;
 			Mesh* mesh;
 			RenderState* renderState;
+
+		public:
+			Material* GetMaterial();
+			Mesh* GetMesh();
+			RenderState* GetRenderState();
+
+		public:
+			void SetMaterial(Material* mat);
+			void SetMesh(Mesh* mesh);
+			void SetRenderState(RenderState* rState);
+
+		public:
+			RenderGroup* group;
+			Renderer* next;
+			Renderer* prev;
 
 		};
 

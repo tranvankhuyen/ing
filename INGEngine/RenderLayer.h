@@ -21,7 +21,12 @@ namespace ING {
 			RenderSystem* system;
 
 		public:
-			RenderGroup* CreateRenderGroup();
+			RenderGroup* headGroup;
+			RenderGroup* tailGroup;
+
+		public:
+			void AddGroup(RenderGroup* group);
+			void RemoveGroup(RenderGroup* group);
 
 		};
 

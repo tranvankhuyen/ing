@@ -4,6 +4,7 @@
 #include "Graphics.h"
 #include "Renderer.h"
 #include "RenderLayer.h"
+#include <vector>
 
 namespace ING {
 	namespace Engine {
@@ -14,6 +15,8 @@ namespace ING {
 
 		class RenderLayer;
 
+		class Shader;
+
 		class RenderSystem {
 		public:
 			RenderSystem(Graphics* graphics);
@@ -23,8 +26,18 @@ namespace ING {
 			Graphics* graphics;
 
 		public:
+			std::vector<RenderLayer*> layers;
+
+		public:
+			void AddRenderLayer(RenderLayer* layer);
+
+		public:
 			Renderer* CreateRenderer();
 			RenderLayer* CreateRenderLayer();
+			RenderGroup* CreateRenderGroup();
+
+		public:
+			Shader* currentShader;
 
 		};
 
