@@ -3,6 +3,7 @@
 
 #include "INGEngine.h"
 #include <DirectXMath.h>
+#include "InputLayoutDesc.h"
 
 namespace ING {
 	namespace Engine {
@@ -12,6 +13,7 @@ namespace ING {
 			DirectX::XMFLOAT3 position;
 			DirectX::XMFLOAT3 normal;
 			DirectX::XMFLOAT2 texcoord;
+			static InputLayoutDesc inputLayoutDesc;
 		};
 
 	}

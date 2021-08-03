@@ -18,23 +18,43 @@ public:
 	virtual void OnStart() override;
 };
 
+
+
+Mesh* mesh;
+
+Shader* shader;
+
+Material* material;
+
+RenderState* renderState;
+
+RasterizerState* rasterizerState;
+DepthStencilState* depthStencilState;
+BlendState* blendState;
+
+Renderer* renderer;
+
+
+
 void INGApp::OnStart() {
 
-	Mesh* mesh = resources->ImportMesh_DemoFile("skull.txt");
+	mesh = resources->ImportMesh_DemoFile("skull.txt");
 
-	Shader* shader = graphics->CreateShaderFromFile(L"demo.fx");
+	shader = graphics->CreateShaderFromFile(L"demo.fx");
+	shader->inputLayoutDesc = Vertex::inputLayoutDesc;
+	shader->CreateInputLayout();
 
-	Material* material = graphics->materialManager->CreateMaterial(shader);
+	material = graphics->materialManager->CreateMaterial(shader);
 
-	RenderState* renderState = graphics->CreateRenderState();
+	renderState = graphics->CreateRenderState();
 
-	RasterizerState* rasterizerState = new RasterizerState();
-	DepthStencilState* depthStencilState = new DepthStencilState();
-	BlendState* blendState = new BlendState();
+	rasterizerState = new RasterizerState();
+	depthStencilState = new DepthStencilState();
+	blendState = new BlendState();
 
 	renderState->Set(rasterizerState,depthStencilState,blendState);
 	
-	Renderer* renderer = graphics->renderSystem->CreateRenderer();
+	renderer = graphics->renderSystem->CreateRenderer();
 
 	renderer->mesh = mesh;
 

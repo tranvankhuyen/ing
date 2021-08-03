@@ -18,3 +18,11 @@ Renderer* RenderSystem::CreateRenderer() {
 	renderer->system = this;
 	return renderer;
 }
+
+
+
+RenderLayer* RenderSystem::CreateRenderLayer() {
+	RenderLayer* renderLayer = new RenderLayer();
+	renderLayer->system = this;
+	return renderLayer;
+}

@@ -91,9 +91,6 @@
     <Filter Include="INGEngine\Resources\Graphics">
       <UniqueIdentifier>{c912c5e7-5f92-4943-82b6-2d17fa4336aa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="INGEngine\Graphics\RenderSystem\RenderMiddleware">
-      <UniqueIdentifier>{5f7b5b27-7889-4102-9373-963a0eb5f2dc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="INGEngine\Graphics\RenderStates\RasterizerState">
       <UniqueIdentifier>{bcbf3681-f435-40ea-be21-a25ec86a0d5f}</UniqueIdentifier>
     </Filter>
@@ -102,6 +99,12 @@
     </Filter>
     <Filter Include="INGEngine\Graphics\RenderStates\BlendState">
       <UniqueIdentifier>{6a4c0eb1-f184-4d40-8054-515d72e26c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\InputLayoutDesc">
+      <UniqueIdentifier>{49517c30-f03b-4b03-8f25-ce47807ae1db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INGEngine\Graphics\RenderSystem\RenderGroup">
+      <UniqueIdentifier>{26dc991a-b426-419f-94b8-5b6a6849d531}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +195,15 @@
     <ClInclude Include="DepthStencilState.h">
       <Filter>INGEngine\Graphics\RenderStates\DepthStencilState</Filter>
     </ClInclude>
+    <ClInclude Include="InputLayoutDesc.h">
+      <Filter>INGEngine\Graphics\InputLayoutDesc</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderLayer.h">
+      <Filter>INGEngine\Graphics\RenderSystem\RenderLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderGroup.h">
+      <Filter>INGEngine\Graphics\RenderSystem\RenderGroup</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -265,6 +277,15 @@
     </ClCompile>
     <ClCompile Include="RenderState.cpp">
       <Filter>INGEngine\Graphics\RenderStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>INGEngine\Graphics\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderLayer.cpp">
+      <Filter>INGEngine\Graphics\RenderSystem\RenderLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderGroup.cpp">
+      <Filter>INGEngine\Graphics\RenderSystem\RenderGroup</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

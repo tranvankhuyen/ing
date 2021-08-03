@@ -103,7 +103,7 @@ bool Graphics::Init() {
 
 Shader* Graphics::CreateShader() {
 	Shader* result = new Shader();
-
+	result->graphics = this;
 	return result;
 }
 

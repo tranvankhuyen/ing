@@ -1,4 +1,2 @@
-﻿  DeviceContext.cpp
-  ING_Window.cpp
-D:\Test\DX\ing\INGEngine\ING_Window.cpp(30,55): warning C4312: 'type cast': conversion from 'LONG' to 'ING::Engine::Window *' of greater size
-  INGEngine.vcxproj -> D:\Test\DX\ing\x64\Release\INGEngine.lib
+﻿  Vertex.cpp
+  INGEngine.vcxproj -> D:\INGGameEngine\ing\x64\Release\INGEngine.lib

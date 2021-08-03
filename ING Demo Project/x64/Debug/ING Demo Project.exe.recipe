@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Test\DX\ing\x64\Debug\ING Demo Project.exe</FullPath>
+      <FullPath>D:\INGGameEngine\ing\x64\Debug\ING Demo Project.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

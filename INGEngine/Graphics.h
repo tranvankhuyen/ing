@@ -82,6 +82,7 @@ namespace ING {
 		public:
 			Shader* CreateShader();
 			Shader* CreateShaderFromFile(LPCWSTR srcPath);
+			
 
 		public:
 			Mesh* CreateMesh();
