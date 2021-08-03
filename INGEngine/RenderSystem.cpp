@@ -40,3 +40,8 @@ void RenderSystem::AddRenderLayer(RenderLayer* layer) {
 	layers.resize(size+1);
 	layers[size] = layer;
 }
+
+
+void RenderSystem::Render() {
+
+}

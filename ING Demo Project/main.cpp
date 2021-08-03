@@ -36,15 +36,46 @@ Renderer* renderer;
 
 
 
+void Log(RenderGroup* group) {
+	std::cout << group << std::endl;
+}
+
+
 void INGApp::OnStart() {
 
+
+
+	RenderLayer* mainRenderLayer = graphics->renderSystem->CreateRenderLayer();
+	graphics->renderSystem->AddRenderLayer(mainRenderLayer);
+
+
+	RenderGroup* mainRenderGroup = graphics->renderSystem->CreateRenderGroup();
+	mainRenderLayer->AddGroup(mainRenderGroup);
+
+	RenderGroup* secondRenderGroup = graphics->renderSystem->CreateRenderGroup();
+	mainRenderLayer->AddGroup(secondRenderGroup);
+
+	mainRenderLayer->GroupsForeach(Log);
+
+
+	renderer = graphics->renderSystem->CreateRenderer();
+	mainRenderGroup->Add(renderer);
+
+
+
 	mesh = resources->ImportMesh_DemoFile("skull.txt");
+
+
 
 	shader = graphics->CreateShaderFromFile(L"demo.fx");
 	shader->inputLayoutDesc = Vertex::inputLayoutDesc;
 	shader->CreateInputLayout();
 
+
+
 	material = graphics->materialManager->CreateMaterial(shader);
+
+
 
 	renderState = graphics->CreateRenderState();
 
@@ -52,15 +83,17 @@ void INGApp::OnStart() {
 	depthStencilState = new DepthStencilState();
 	blendState = new BlendState();
 
-	renderState->Set(rasterizerState,depthStencilState,blendState);
-	
-	renderer = graphics->renderSystem->CreateRenderer();
+	renderState->Set(rasterizerState, depthStencilState, blendState);
+
+
 
 	renderer->SetMesh(mesh);
 
 	renderer->SetMaterial(material);
 
 	renderer->SetRenderState(renderState);
+
+
 
 	DefaultStart();
 }

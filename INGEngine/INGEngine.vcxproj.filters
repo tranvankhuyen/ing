@@ -198,11 +198,11 @@
     <ClInclude Include="InputLayoutDesc.h">
       <Filter>INGEngine\Graphics\InputLayoutDesc</Filter>
     </ClInclude>
-    <ClInclude Include="RenderLayer.h">
-      <Filter>INGEngine\Graphics\RenderSystem\RenderLayer</Filter>
-    </ClInclude>
     <ClInclude Include="RenderGroup.h">
       <Filter>INGEngine\Graphics\RenderSystem\RenderGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderLayer.h">
+      <Filter>INGEngine\Graphics\RenderSystem\RenderLayer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -31,6 +31,7 @@ namespace ING {
 		public:
 			void AddRenderLayer(RenderLayer* layer);
 
+
 		public:
 			Renderer* CreateRenderer();
 			RenderLayer* CreateRenderLayer();
@@ -38,6 +39,9 @@ namespace ING {
 
 		public:
 			Shader* currentShader;
+
+		public:
+			void Render();
 
 		};
 

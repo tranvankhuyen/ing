@@ -25,6 +25,9 @@ namespace ING {
 			RenderGroup* tailGroup;
 
 		public:
+			void GroupsForeach(void (*func)(RenderGroup* group));
+
+		public:
 			void AddGroup(RenderGroup* group);
 			void RemoveGroup(RenderGroup* group);
 

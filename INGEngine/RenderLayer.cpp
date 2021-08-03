@@ -43,3 +43,11 @@ void RenderLayer::RemoveGroup(RenderGroup* group) {
 	}
 
 }
+
+void RenderLayer::GroupsForeach(void (*func)(RenderGroup* group)) {
+	RenderGroup* gr=headGroup;
+	while (gr !=nullptr) {
+		func(gr);
+		gr = gr->next;
+	}
+}
