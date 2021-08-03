@@ -1,1 +1,3 @@
-﻿  ING Demo Project.vcxproj -> D:\Test\DX\ing\x64\Debug\ING Demo Project.exe
+﻿  main.cpp
+  LINK : D:\INGGameEngine\ing\x64\Debug\ING Demo Project.exe not found or not built by the last incremental link; performing full link
+  ING Demo Project.vcxproj -> D:\INGGameEngine\ing\x64\Debug\ING Demo Project.exe

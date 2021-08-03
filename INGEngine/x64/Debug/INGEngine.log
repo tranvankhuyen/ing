@@ -24,6 +24,6 @@
   ING_Time.cpp
   TransformComponent.cpp
   ING_Window.cpp
-D:\Test\DX\ing\INGEngine\ING_Window.cpp(30,55): warning C4312: 'type cast': conversion from 'LONG' to 'ING::Engine::Window *' of greater size
+D:\INGGameEngine\ing\INGEngine\ING_Window.cpp(30,55): warning C4312: 'type cast': conversion from 'LONG' to 'ING::Engine::Window *' of greater size
   Generating Code...
-  INGEngine.vcxproj -> D:\Test\DX\ing\x64\Debug\INGEngine.lib
+  INGEngine.vcxproj -> D:\INGGameEngine\ing\x64\Debug\INGEngine.lib
